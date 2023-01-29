@@ -8,20 +8,17 @@
         var elem = document.getElementById('bg');
         function gb(){elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";}
 	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
-	var equiped=1;
+	var vbg="ClumsyChiefDassierat-max-1mb.gif";
 	function clicked(){
-		if (equipped==1){
-			var elem = document.getElementById('bg');
-			elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";
-			equipped=2;
+		var elem = document.getElementById('bg');
+		if (vbg=="ClumsyChiefDassierat-max-1mb.gif"){
+			vbg="ClumsyChiefDassierat-max-1mb.gif";
 		}
-		if (equipped==2){
-			var elem = document.getElementById('bg');
-			elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";
-			equipped=1;
+		else{
+			vbg="FailingSnivelingAfricanhornbill-size_restricted.gif";
 		}
+		elem.style.backgroundImage="url("+vbg+")";
 	}
-	clicked();
       </script>
       <button onclick="clicked();">bg change</button>
       <a href="1v1lol/index.htm">
