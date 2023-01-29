@@ -14,6 +14,8 @@
 	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
 	var vbg=value;
 	var menu=0;
+	var menubg = document.getElementById('menubg');
+	style="position:fixed; left:-1000000px; top:0px;width:100px; height:600px; border:none;"
 	elem.style.backgroundImage="url("+vbg+")";
 	function clicked(){
 		var elem = document.getElementById('bg');
@@ -29,12 +31,12 @@
 	}
 	function menu(){
 		if (menu==0){
-			var menubg = document.getElementById('menubg');
+			menubg = document.getElementById('menubg');
 			style="position:fixed; left:0px; top:0px;width:100px; height:600px; border:none;"
 			menu=1;
 		}
 		else{
-			var menubg = document.getElementById('menubg');
+			menubg = document.getElementById('menubg');
 			style="position:fixed; left:-1000000px; top:0px;width:100px; height:600px; border:none;"
 			menu=0;
 		}
