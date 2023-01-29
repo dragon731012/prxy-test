@@ -5,19 +5,27 @@
       <p style="text-align:center"> <font size="10">games</font></p>
       <body id="bg" style="size:800px;height:500px;background:url(ClumsyChiefDassierat-max-1mb.gif) no-repeat; background-size: cover">
       <script>
+	var value=window.localStorage.getItem("value");
+	if (value=="null"){
+		window.localStorage.setItem("value","ClumsyChiefDassierat-max-1mb.gif");
+	}
         var elem = document.getElementById('bg');
 	elem.style.top = '0px';
 	elem.style.left = '0px';
         function gb(){elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";}
 	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
-	var vbg="ClumsyChiefDassierat-max-1mb.gif";
+	value=window.localStorage.getItem("value");
+	var vbg=value;
 	function clicked(){
 		var elem = document.getElementById('bg');
 		if (vbg=="ClumsyChiefDassierat-max-1mb.gif"){
 			vbg="FailingSnivelingAfricanhornbill-size_restricted.gif";
+			window.localStorage.setItem("value",vgb);
+			
 		}
 		else{
 			vbg="ClumsyChiefDassierat-max-1mb.gif";
+			window.localStorage.setItem("value",vgb);
 		}
 		elem.style.backgroundImage="url("+vbg+")";
 	}
