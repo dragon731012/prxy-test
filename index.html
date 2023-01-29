@@ -19,8 +19,23 @@
 			equipped=1;
 		}
 	}
+	clicked();
       </script>
-      <button onclick=clicked();>background change</button>
+      <button onclick="const elem = document.getElementById('bg');
+        function gb(){elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";}
+	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
+	var equiped=1;
+	function clicked(){
+		if (equipped==1){
+			bb();
+			equipped=2;
+		}
+		if (equipped==2){
+			gb();
+			equipped=1;
+		}
+	}
+	clicked();">background change</button>
       <a href="1v1lol/index.htm">
         <img src="HDIEpfJr_400x400.jpg"
           width="250" 
