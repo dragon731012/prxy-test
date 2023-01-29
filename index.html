@@ -5,37 +5,25 @@
       <p style="text-align:center"> <font size="10">games</font></p>
       <body id="bg" style="size:800px;height:500px;background:url() no-repeat; background-size: cover">
       <script>
-        const elem = document.getElementById('bg');
+        var elem = document.getElementById('bg');
         function gb(){elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";}
 	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
 	var equiped=1;
 	function clicked(){
 		if (equipped==1){
-			bb();
+			elem = document.getElementById('bg');
+			elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";
 			equipped=2;
 		}
 		if (equipped==2){
-			gb();
+			elem = document.getElementById('bg');
+			elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";
 			equipped=1;
 		}
 	}
 	clicked();
       </script>
-      <button onclick="const elem = document.getElementById('bg');
-        function gb(){elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";}
-	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
-	var equiped=1;
-	function clicked(){
-		if (equipped==1){
-			bb();
-			equipped=2;
-		}
-		if (equipped==2){
-			gb();
-			equipped=1;
-		}
-	}
-	clicked();">bg change</button>
+      <button onclick="">bg change</button>
       <a href="1v1lol/index.htm">
         <img src="HDIEpfJr_400x400.jpg"
           width="250" 
