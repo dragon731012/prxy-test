@@ -42,8 +42,9 @@
           align="left"
         >
       </a>
-      <a onclick="menu();">
+      <a>
         <img src="1024px-Hamburger_icon_white.svg.png"
+	  id="menuicon"
           style="position:fixed; left:10px; top:10px; width:80px; height:80px; border:none;"
           width="50" 
           height="50" 
@@ -128,6 +129,9 @@
 			menu=0;
 		}
 	}
+	document.getElementById('menuicon').addEventListener('click',function(){
+	        menu();
+        });
       </script>
     </font>
   </body>  
