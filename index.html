@@ -37,9 +37,11 @@
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 	}
 	function custombg(){
-		cb=prompt("paste the image address here, then click the background icon 4 times. It should be saved and there");
+		cb=prompt("paste the image address here, then it should be saved");
 		document.cookie="cb="+cb+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
 		vbg=cb;
+		elem.style.backgroundImage="url("+vbg+")";
+		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 	}
 	function incog(){
 		var title=prompt("what do you want the tab title to be?");
