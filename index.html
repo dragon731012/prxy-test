@@ -26,7 +26,15 @@
 		elem.style.backgroundImage="url("+vbg+")";
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 	}
-       
+        var menu=0;
+	function switch(){
+            if (menu==0){
+                menu=1;
+            }
+	    if (menu==1){
+                menu=0;
+            }
+        }
       </script>
       <img src="Grey_full.png"
 	  id="menubg"
@@ -42,7 +50,7 @@
           align="left"
         >
       </a>
-      <a>
+      <a onclick="switch();">
         <img src="1024px-Hamburger_icon_white.svg.png"
 	  id="menuicon"
           style="position:fixed; left:10px; top:10px; width:80px; height:80px; border:none;"
@@ -114,7 +122,6 @@
         >
       </a>
       <script>
-        var menu=0;
 	var menubg = document.getElementById('menubg');
 	menubg.style.left="99999999990px";
 	function menu(){
@@ -129,9 +136,7 @@
 			menu=0;
 		}
 	}
-	document.getElementById('menuicon').addEventListener('click',function(){
-	        menu();
-        });
+	setInterval(menu,15);
       </script>
     </font>
   </body>  
