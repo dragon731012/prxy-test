@@ -7,8 +7,14 @@
       <script>
 	function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
         var value=get_cookie("value");
+	if (value == null) {
+		value="FailingSnivelingAfricanhornbill-size_restricted.gif";
+        }
 	var icon=get_cookie("icon");
 	var title=get_cookie("title");
+	if (title == null) {
+		title="not games";
+        }
 	var cb=get_cookie("cb");
 	(function() {    var l = document.querySelector("link[rel*='icon']") || document.createElement('link');    l.type = 'image/x-icon';    l.rel = 'shortcut icon';    l.href = icon;    document.getElementsByTagName('head')[0].appendChild(l);    document.title = title;})();
 	var elem = document.getElementById('bg');
