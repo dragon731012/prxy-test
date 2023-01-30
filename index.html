@@ -32,12 +32,12 @@
 	function menu(){
 		if (menu==0){
 			menubg = document.getElementById('menubg');
-			menubg.style="position:fixed; left:0px; top:0px;width:100px; height:600px; border:none;";
+			menubg.style.left="0px";
 			menu=1;
 		}
 		else{
 			menubg = document.getElementById('menubg');
-			menubg.style="position:fixed; left:-1000000px; top:0px;width:100px; height:600px; border:none;";
+                        menubg.style.left="99999999990px";
 			menu=0;
 		}
 	}
