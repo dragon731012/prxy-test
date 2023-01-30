@@ -50,6 +50,9 @@
 		document.cookie="icon="+icon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
 		(function() {    var l = document.querySelector("link[rel*='icon']") || document.createElement('link');    l.type = 'image/x-icon';    l.rel = 'shortcut icon';    l.href = icon;    document.getElementsByTagName('head')[0].appendChild(l);    document.title = title;})();
 	}
+	function blanker(){
+		(function () {var url = document.URL; var urlObj = new window.URL(window.location.href); win = window.open(); win.document.body.style.margin = "0"; win.document.body.style.height = "100vh"; var iframe = win.document.createElement("iframe"); iframe.style.border = "none"; iframe.style.width = "100%"; iframe.style.height = "100%"; iframe.style.margin = "0"; iframe.referrerpolicy = "no-referrer"; iframe.allow = "fullscreen"; iframe.src = url.toString(); win.document.body.appendChild(iframe); var script = win.document.createElement("script"); script.src = "https://3kh0.github.io/js/main.js"; win.document.body.appendChild(script); })();
+	}
       </script>
       <a onclick="clicked();">
         <img src="271-2713330_change-background-comments-background-icon-png.jpg"
@@ -60,6 +63,7 @@
         >
       </a>
       <button onclick="custombg();" style="position:fixed; left:10px; top:125px;" align="left">custom bg</button>
+      <button onclick="blanker();" style="position:fixed; left:10px; top:205px;" align="left">about-blanker (will not work if downloaded)</button>
       <a onclick="incog();">
         <img src="22-226699_incognito-icon-png.jpg"
 	  style="position:fixed; left:10px; top:230px;width:50px; height:50px; border:none;"
