@@ -13,9 +13,6 @@
         function gb(){elem.style.backgroundImage="url(ClumsyChiefDassierat-max-1mb.gif)";}
 	function bb(){elem.style.backgroundImage="url(FailingSnivelingAfricanhornbill-size_restricted.gif)";}
 	var vbg=value;
-	var menu=0;
-	var menubg = document.getElementById('menubg');
-	menubg.style.left="99999999990px";
 	elem.style.backgroundImage="url("+vbg+")";
 	function clicked(){
 		var elem = document.getElementById('bg');
@@ -29,18 +26,7 @@
 		elem.style.backgroundImage="url("+vbg+")";
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 	}
-	function menu(){
-		if (menu==0){
-			menubg = document.getElementById('menubg');
-			menubg.style.left="0px";
-			menu=1;
-		}
-		else{
-			menubg = document.getElementById('menubg');
-                        menubg.style.left="99999999990px";
-			menu=0;
-		}
-	}
+       
       </script>
       <img src="Grey_full.png"
 	  id="menubg"
@@ -126,6 +112,23 @@
           height="50"
         >
       </a>
+      <script>
+        var menu=0;
+	var menubg = document.getElementById('menubg');
+	menubg.style.left="99999999990px";
+	function menu(){
+		if (menu==0){
+			menubg = document.getElementById('menubg');
+			menubg.style.left="0px";
+			menu=1;
+		}
+		else{
+			menubg = document.getElementById('menubg');
+                        menubg.style.left="99999999990px";
+			menu=0;
+		}
+	}
+      </script>
     </font>
   </body>  
 </html>
