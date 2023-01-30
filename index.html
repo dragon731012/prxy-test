@@ -27,10 +27,23 @@
 		elem.style.backgroundImage="url("+vbg+")";
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 	}
+	function incog(){
+		var title=prompt("what do you want the tab title to be?");
+		var icon=prompt("put the tab icon image address here");
+		(function() {    var l = document.querySelector("link[rel*='icon']") || document.createElement('link');    l.type = 'image/x-icon';    l.rel = 'shortcut icon';    l.href = icon;    document.getElementsByTagName('head')[0].appendChild(l);    document.title = title;})();
+	}
       </script>
       <a onclick="clicked();">
         <img src="271-2713330_change-background-comments-background-icon-png.jpg"
 	  style="position:fixed; left:10px; top:150px;width:50px; height:50px; border:none;"
+          width="50" 
+          height="50" 
+          align="left"
+        >
+      </a>image_processing20210616-17152-j2eezk.png
+      <a onclick="incog();">
+        <img src="image_processing20210616-17152-j2eezk.png"
+	  style="position:fixed; left:10px; top:300px;width:50px; height:50px; border:none;"
           width="50" 
           height="50" 
           align="left"
