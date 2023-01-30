@@ -26,36 +26,13 @@
 		elem.style.backgroundImage="url("+vbg+")";
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
 	}
-        var menu=0;
-	function switch(){
-            if (menu==0){
-                menu=1;
-            }
-	    if (menu==1){
-                menu=0;
-            }
-        }
       </script>
-      <img src="Grey_full.png"
-	  id="menubg"
-	  style="position:fixed; left:0px; top:0px;width:100px; height:600px; border:none;"
-          width="50" 
-          height="50" 
-      >
       <a onclick="clicked();">
         <img src="271-2713330_change-background-comments-background-icon-png.jpg"
 	  style="position:fixed; left:10px; top:150px;width:50px; height:50px; border:none;"
           width="50" 
           height="50" 
           align="left"
-        >
-      </a>
-      <a onclick="switch();">
-        <img src="1024px-Hamburger_icon_white.svg.png"
-	  id="menuicon"
-          style="position:fixed; left:10px; top:10px; width:80px; height:80px; border:none;"
-          width="50" 
-          height="50" 
         >
       </a>
       <a href="1v1lol/index.htm">
@@ -121,21 +98,6 @@
           height="50"
         >
       </a>
-      <script>
-	var menubg = document.getElementById('menubg');
-	menubg.style.left="99999999990px";
-	function menu(){
-		if (menu==0){
-			menubg = document.getElementById('menubg');
-			menubg.style.left="0px";
-		}
-		else{
-			menubg = document.getElementById('menubg');
-                        menubg.style.left="99999999990px";
-		}
-	}
-	setInterval(menu,15);
-      </script>
     </font>
   </body>  
 </html>
