@@ -9,6 +9,7 @@
         var value=get_cookie("value");
 	var icon=get_cookie("icon");
 	var title=get_cookie("title");
+	var cb=get_cookie("cb");
 	(function() {    var l = document.querySelector("link[rel*='icon']") || document.createElement('link');    l.type = 'image/x-icon';    l.rel = 'shortcut icon';    l.href = icon;    document.getElementsByTagName('head')[0].appendChild(l);    document.title = title;})();
 	var elem = document.getElementById('bg');
 	elem.style.top = '0px';
@@ -26,8 +27,11 @@
 		else if (vbg=="FailingSnivelingAfricanhornbill-size_restricted.gif"){
 			vbg="ClumsyChiefDassierat-max-1mb.gif";
 		}
-	        else{
+	        else if (vbg=="ClumsyChiefDassierat-max-1mb.gif"){
 			vbg="BlissfulScentedAustraliancattledog-size_restricted.gif";
+		}
+		else{
+			vbg=icon;
 		}
 		elem.style.backgroundImage="url("+vbg+")";
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
