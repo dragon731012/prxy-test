@@ -31,10 +31,15 @@
 			vbg="BlissfulScentedAustraliancattledog-size_restricted.gif";
 		}
 		else{
-			vbg=icon;
+			vbg=cb;
 		}
 		elem.style.backgroundImage="url("+vbg+")";
 		document.cookie="value="+vbg+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
+	}
+	function custombg(){
+		cb=prompt("paste the image address here");
+		document.cookie="cb="+cb+"; expires=Thu, 18 Dec 9013 12:00:00 UTC";
+		vbg=cb;
 	}
 	function incog(){
 		var title=prompt("what do you want the tab title to be?");
@@ -52,6 +57,7 @@
           align="left"
         >
       </a>
+      <button onclick="custombg();">custom bg</button>
       <a onclick="incog();">
         <img src="22-226699_incognito-icon-png.jpg"
 	  style="position:fixed; left:10px; top:230px;width:50px; height:50px; border:none;"
