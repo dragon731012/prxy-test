@@ -102,6 +102,7 @@ function getRandomColor() {
   var admin=banlist.includes(name);
   if (admin==true){
 	  return #0000FF;
+  }
   return #808080;
 }
 
