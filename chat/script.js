@@ -65,6 +65,9 @@ function getRandomName() {
     if (banned==true){
 	document.cookie="banned=yes; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
   }
+   else{	
+	   document.cookie="banned=no; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+   }
   var bannedcookie=get_cookie("banned");
   if (bannedcookie=="yes"){
         history.back();
