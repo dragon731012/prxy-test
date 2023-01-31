@@ -99,7 +99,8 @@ function getRandomName() {
 }
 
 function getRandomColor() {
-  var admin=banlist.includes(name);
+  var name=get_cookie("name");
+  var admin=adminlist.includes(name);
   if (admin==true){
 	  return '#0000FF';
   }
