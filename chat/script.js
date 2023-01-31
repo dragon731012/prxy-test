@@ -63,7 +63,8 @@ function getRandomName() {
   var change=prompt("do you want to change your username? 0=no 1=yes");
   if (change==0){
 	  var name=get_cookie("name");
-	  if (banlist.includes(name)){
+	  var banned=banlist.includes(name);
+	  if (banned==true){
 	  	alert("you've been banned.");
 	  }
 	  if (name == null) {
