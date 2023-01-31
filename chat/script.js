@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
-
+function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
     name: getRandomName(),
@@ -59,7 +59,10 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-  var name=prompt("what is your username?");
+  var name=get_cookie("name");
+  if (name == null) {
+		name=prompt("what is your username?");
+  }
   return name;
 }
 
