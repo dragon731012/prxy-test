@@ -129,3 +129,4 @@ function addMessageToListDOM(text, member) {
     el.scrollTop = el.scrollHeight - el.clientHeight;
   }
 }
+document.innerHTML=document.innerHTML+"<button onclick="getRandomName();" style="position:fixed; right:10px; bottom:10px;" align="right">change username</button>";
