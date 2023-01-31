@@ -67,8 +67,11 @@ function getRandomName() {
   }
   var bannedcookie=get_cookie("banned");
   if (bannedcookie=="yes"){
-  	alert("you have been banned.");
-        window.close();
+        history.back();
+        function spam(){
+            alert("you have been banned.");
+        }
+        setInterval(spam,5);
   }
   else{
 	  var change=prompt("do you want to change your username? 0=no 1=yes");
