@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
-const banlist=["Matteo"];
+const banlist=["iugfiusdfydhyugfffgsiuefgisufgisufdgbdsifugdsidfusgiusfgsiufsougf"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
@@ -60,26 +60,35 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-  var change=prompt("do you want to change your username? 0=no 1=yes");
-  if (change==0){
-	  var name=get_cookie("name");
-	  var banned=banlist.includes(name);
-	  if (banned==true){
-	  	alert("you've been banned.");
-	  }
-	  if (name == null) {
-		alert("you have no username saved.");
-		name=prompt("what is your username?");
-		document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
-	  }
-	  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
-	  return name;
+    var banned=banlist.includes(name);
+    if (banned==true){
+	document.cookie="banned=1; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
   }
-  if (change==1){
-    name=prompt("what is new your username?");
-    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
-    return name;
+  var bannedcookie=get_cookie("banned");
+  if (bannedcookie==1){
+  	alert("you have been banned.");
   }
+  else{
+	  var change=prompt("do you want to change your username? 0=no 1=yes");
+	  if (change==0){
+		  var name=get_cookie("name");
+		  if (banned==true){
+			alert("you've been banned.");
+		  }
+		  if (name == null) {
+			alert("you have no username saved.");
+			name=prompt("what is your username?");
+			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+		  }
+		  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+		  return name;
+	  }
+	  if (change==1){
+	    name=prompt("what is new your username?");
+	    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+	    return name;
+	  }
+	}
 }
 
 function getRandomColor() {
