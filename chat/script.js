@@ -59,13 +59,21 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-  var name=get_cookie("name");
-  if (name == null) {
-	name=prompt("what is your username?");
-	document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+  var change=prompt("do you want to change your username? 0=no 1=yes");
+  if (change==0){
+	  var name=get_cookie("name");
+	  if (name == null) {
+		alert("you have no username saved.");
+		name=prompt("what is your username?");
+		document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+	  }
+	  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+	  return name;
   }
-  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
-  return name;
+  if (change==1){
+    name=prompt("what is new your username?");
+    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+  }
 }
 
 function getRandomColor() {
