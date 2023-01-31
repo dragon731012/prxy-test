@@ -73,6 +73,7 @@ function getRandomName() {
   if (change==1){
     name=prompt("what is new your username?");
     document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+    return name;
   }
 }
 
