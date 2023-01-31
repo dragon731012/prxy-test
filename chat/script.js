@@ -63,19 +63,17 @@ function getRandomName() {
     var name=get_cookie("name");
     var banned=banlist.includes(name);
     if (banned==true){
-	document.cookie="banned=1; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+	document.cookie="banned=yes; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
   }
   var bannedcookie=get_cookie("banned");
-  if (bannedcookie==1){
+  if (bannedcookie=="yes"){
   	alert("you have been banned.");
   }
   else{
 	  var change=prompt("do you want to change your username? 0=no 1=yes");
 	  if (change==0){
 		  var name=get_cookie("name");
-		  if (banned==true){
-			alert("you've been banned.");
-		  }
+		
 		  if (name == null) {
 			alert("you have no username saved.");
 			name=prompt("what is your username?");
