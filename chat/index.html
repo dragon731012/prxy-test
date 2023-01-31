@@ -65,17 +65,5 @@
     <input class="message-form__button" value="Send" type="submit"/>
   </form>
   <script src="./script.js"></script>
-  <script>
-    function name(){
-      var name=get_cookie("name");
-      if (name == null) {
-	name=prompt("what is your username?");
-	document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
-  }
-  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
-  return name;
-    }
-  </script>
-  <button onclick="name();" style="position:fixed; left:10px; top:125px;" align="left">username change-in progress</button>
 </body>
 </html>
