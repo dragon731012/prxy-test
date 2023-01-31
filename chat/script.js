@@ -1,6 +1,6 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
-const CLIENT_ID = 'm3BAnyjnCGqgWZye';
+const CLIENT_ID = 'bannednametest12345';
 const banlist=["iugfiusdfydhyugfffgsiuefgisufgisufdgbdsifugdsidfusgiusfgsiufsougf"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
@@ -84,7 +84,7 @@ function getRandomName() {
 		  return name;
 	  }
 	  if (change==1){
-	    name=prompt("what is new your username?");
+	    name=prompt("what is your new username?");
 	    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
 	    return name;
 	  }
