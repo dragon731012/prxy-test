@@ -60,6 +60,7 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
+    var name=get_cookie("name");
     var banned=banlist.includes(name);
     if (banned==true){
 	document.cookie="banned=1; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
