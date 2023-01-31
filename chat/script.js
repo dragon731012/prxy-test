@@ -2,6 +2,7 @@
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
 const banlist=["bannednametest123456"];
+const adminlist=["Matteo"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
@@ -98,7 +99,10 @@ function getRandomName() {
 }
 
 function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+  var admin=banlist.includes(name);
+  if (admin==true){
+	  return #0000FF;
+  return #808080;
 }
 
 //------------- DOM STUFF
