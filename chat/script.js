@@ -61,7 +61,8 @@ drone.on('error', error => {
 function getRandomName() {
   var name=get_cookie("name");
   if (name == null) {
-		name=prompt("what is your username?");
+	name=prompt("what is your username?");
+	document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
   }
   return name;
 }
