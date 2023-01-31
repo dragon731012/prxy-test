@@ -1,6 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
+const banlist=["Matteo"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
@@ -62,6 +63,9 @@ function getRandomName() {
   var change=prompt("do you want to change your username? 0=no 1=yes");
   if (change==0){
 	  var name=get_cookie("name");
+	  if (banlist.includes(name)){
+	  	alert("you've been banned.");
+	  }
 	  if (name == null) {
 		alert("you have no username saved.");
 		name=prompt("what is your username?");
