@@ -83,9 +83,18 @@ function getRandomName() {
 		  var name=get_cookie("name");
 		
 		  if (name == null) {
-			alert("you have no username saved.");
-			name=prompt("what is your username?");
-			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+			name=prompt("what is your new username?");
+			    var admin=adminlist.includes(name);
+			    if (admin==true){
+				var try1=prompt("what is the password for this account?");
+				var pass="thisisagreatpassword12130183113098313108913098313113293923";
+				if (try1==pass){
+					name="admin: "+name;
+				} 
+			    }
+			    else{
+				name="member: "+name;
+			    }
 		  }
 		  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 		  var admin=adminlist.includes(name);
