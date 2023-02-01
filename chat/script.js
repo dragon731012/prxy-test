@@ -156,6 +156,7 @@ function sendMessage() {
   var swearing=false;
   while (x<xmax){
 	var hash='';
+	var z=0;
   	var swear=hasWord(value,swearlist[x]);
 	var a=swearlist[x].length();
 	if (swear==true){
@@ -163,7 +164,7 @@ function sendMessage() {
 			hash=hash+'#';
 			z=z+1;
 		}
-		value = text.replace(swearlist[x], hash);
+		value.replace(swearlist[x], hash);
 		hash='';
 		x=xmax;
 	}
