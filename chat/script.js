@@ -150,13 +150,13 @@ const DOM = {
 DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
-  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub"];
+  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub","dickhead","dick"];
   const value = DOM.input.value;
   const hasWord = (str, word) => 
   	str.replace(/[ .,\/#!$%\^&\*@;:{}=\-_`~()]/g,"").split(/\s+/).includes(word);
   
   var x=0;
-  var xmax=15;
+  var xmax=17;
   var swearing=false;
   while (x<xmax){
   	var swear=hasWord(value,swearlist[x]);
