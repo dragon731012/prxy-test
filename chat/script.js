@@ -90,10 +90,10 @@ function getRandomName() {
 		  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 		  var admin=adminlist.includes(name);
 		    if (admin==true){
-			name=name+":admin";
+			name="admin: "+name;
 		    } 
 		    else{
-			name=name+":member";
+			name="member: "+name;
 		    }
 		  return name;
 	  }
@@ -101,10 +101,14 @@ function getRandomName() {
 	    name=prompt("what is your new username?");
             var admin=adminlist.includes(name);
   	    if (admin==true){
-	    	name=name+":admin";
-            } 
+		var try=prompt("what is the password for this account?");
+		var pass="thisisagreatpassword12130183113098313108913098313113293923";
+		if (try==pass){
+	    		name="admin: "+name;
+		} 
+	    }
 	    else{
-	    	name=name+":member";
+	    	name="member: "+name;
 	    }
 	    return name;
 	  }
