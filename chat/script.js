@@ -146,7 +146,7 @@ function sendMessage() {
   var xmax=7;
   var swearing=false;
   while (x<xmax){
-  	var swear=hasWord(value,swearlist[x];
+  	var swear=hasWord(value,swearlist[x]);
 	if (swear==true){
 		alert("no swearing or bad words!");
 		x=xmax;
