@@ -99,9 +99,11 @@ function getRandomName() {
 		  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 		  var admin=adminlist.includes(name);
 		    if (admin==true){
+			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 			name="admin: "+name;
 		    } 
 		    else{
+			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 			name="member: "+name;
 		    }
 		  return name;
@@ -113,10 +115,12 @@ function getRandomName() {
 		var try1=prompt("what is the password for this account?");
 		var pass="thisisagreatpassword12130183113098313108913098313113293923";
 		if (try1==pass){
+			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 	    		name="admin: "+name;
 		} 
 	    }
 	    else{
+		document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 	    	name="member: "+name;
 	    }
 	    return name;
