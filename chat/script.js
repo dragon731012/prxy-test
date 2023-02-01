@@ -150,7 +150,7 @@ const DOM = {
 DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
-  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy"];
+  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs"];
   const value = DOM.input.value;
   const hasWord = (str, word) => 
   	str.replace(/[ .,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(/\s+/).includes(word);
