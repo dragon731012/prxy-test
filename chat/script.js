@@ -138,6 +138,9 @@ DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
   const value = DOM.input.value;
+  if (value == 'hi'){
+  	alert("hi");
+  }
   if (value === '') {
     return;
   }
