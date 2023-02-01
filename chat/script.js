@@ -93,20 +93,12 @@ function getRandomName() {
 				if (try1==pass){
 					name="admin: "+name;
 				} 
-				else{
-					alert("wrong password.");
-					window.location.reload(1);
-				} 
 			    }
 			    else if (coadmin==true){
 				var try1=prompt("what is the password for this account?");
 				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
 				if (try1==pass){
 					name="co-admin: "+name;
-				}
-				else{
-					alert("wrong password.");
-					window.location.reload(1);
 				} 
 			    }
 			    else{
@@ -126,10 +118,6 @@ function getRandomName() {
 				if (try1==pass){
 					name="co-admin: "+name;
 				} 
-			    	else{
-					alert("wrong password.");
-					window.location.reload(1);
-				} 
 			    }
 		    else{
 			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
@@ -137,7 +125,7 @@ function getRandomName() {
 		    }
 		  return name;
 	  }
-	  else if (change==1){
+	  if (change==1){
 	    name=prompt("what is your new username?");
             var admin=adminlist.includes(name);
 	    var coadmin=coadminlist.includes(name);
@@ -147,10 +135,6 @@ function getRandomName() {
 		if (try1==pass){
 			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 	    		name="admin: "+name;
-		}
-		else{
-			alert("wrong password.");
-			window.location.reload(1);
 		} 
 	    }
 	    else if (coadmin==true){
@@ -158,10 +142,6 @@ function getRandomName() {
 				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
 				if (try1==pass){
 					name="co-admin: "+name;
-				}
-		    		else{
-					alert("wrong password.");
-					window.location.reload(1);
 				} 
 			    }
 	    else{
@@ -172,7 +152,7 @@ function getRandomName() {
 	  }
 	}
 	else{
-		alert("please type one of the numbers.");
+		alert("please write one of the numbers.");
 		window.location.reload(1);
 	}
 }
