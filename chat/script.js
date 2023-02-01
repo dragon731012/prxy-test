@@ -157,7 +157,7 @@ function sendMessage() {
   while (x<xmax){
 	var hash='';
   	var swear=hasWord(value,swearlist[x]);
-	var a=swearlist[x].length()
+	var a=swearlist[x].length();
 	if (swear==true){
 		while (z<a){
 			hash=hash+'#';
