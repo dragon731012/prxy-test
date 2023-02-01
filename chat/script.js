@@ -155,16 +155,21 @@ function sendMessage() {
   var xmax=10;
   var swearing=false;
   while (x<xmax){
+	var hash='';
   	var swear=hasWord(value,swearlist[x]);
+	var a=swearlist[x].length()
 	if (swear==true){
-		alert("no swearing or bad words!");
+		while (z<a){
+			hash=hash+'#';
+			z=z+1;
+		}
+		value = text.replace(swearlist[x], hash);
+		hash='';
 		x=xmax;
-		swearing=true;
 	}
 	x=x+1;
   }
 
-  if (swear != true){
 	  if (value === '') {
 	    return;
 	  }
@@ -173,7 +178,7 @@ function sendMessage() {
 	    room: 'observable-room',
 	    message: value,
 	  });
-  }
+  
 }
 
 function createMemberElement(member) {
