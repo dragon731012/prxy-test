@@ -86,11 +86,19 @@ function getRandomName() {
 		  if (name == null) {
 			name=prompt("what is your new username?");
 			    var admin=adminlist.includes(name);
+			    var coadmin=coadminlist.includes(name);
 			    if (admin==true){
 				var try1=prompt("what is the password for this account?");
 				var pass="thisisagreatpassword12130183113098313108913098313113293923";
 				if (try1==pass){
 					name="admin: "+name;
+				} 
+			    }
+			    else if (coadmin==true){
+				var try1=prompt("what is the password for this account?");
+				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				if (try1==pass){
+					name="co-admin: "+name;
 				} 
 			    }
 			    else{
@@ -99,10 +107,18 @@ function getRandomName() {
 		  }
 		  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 		  var admin=adminlist.includes(name);
+		  var coadmin=coadminlist.includes(name);
 		    if (admin==true){
 			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 			name="admin: "+name;
 		    } 
+		    else if (coadmin==true){
+				var try1=prompt("what is the password for this account?");
+				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				if (try1==pass){
+					name="co-admin: "+name;
+				} 
+			    }
 		    else{
 			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 			name="member: "+name;
@@ -112,6 +128,7 @@ function getRandomName() {
 	  if (change==1){
 	    name=prompt("what is your new username?");
             var admin=adminlist.includes(name);
+	    var coadmin=coadminlist.includes(name);
   	    if (admin==true){
 		var try1=prompt("what is the password for this account?");
 		var pass="thisisagreatpassword12130183113098313108913098313113293923";
@@ -120,6 +137,13 @@ function getRandomName() {
 	    		name="admin: "+name;
 		} 
 	    }
+	    else if (coadmin==true){
+				var try1=prompt("what is the password for this account?");
+				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				if (try1==pass){
+					name="co-admin: "+name;
+				} 
+			    }
 	    else{
 		document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 	    	name="member: "+name;
@@ -132,8 +156,12 @@ function getRandomName() {
 function getRandomColor() {
   var name=get_cookie("name");
   var admin=adminlist.includes(name);
+  var coadmin=coadminlist.includes(name);
   if (admin==true){
 	  return '#0000FF';
+  }
+  if (coadmin==true){
+	  return '##702963';
   }
   return '#808080';
 }
