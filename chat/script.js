@@ -101,9 +101,9 @@ function getRandomName() {
 	    name=prompt("what is your new username?");
             var admin=adminlist.includes(name);
   	    if (admin==true){
-		var try=prompt("what is the password for this account?");
+		var try1=prompt("what is the password for this account?");
 		var pass="thisisagreatpassword12130183113098313108913098313113293923";
-		if (try==pass){
+		if (try1==pass){
 	    		name="admin: "+name;
 		} 
 	    }
