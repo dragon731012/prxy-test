@@ -92,7 +92,11 @@ function getRandomName() {
 	  }
 	  if (change==1){
 	    name=prompt("what is your new username?");
-	    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	  
+	    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
+            var admin=adminlist.includes(name);
+  	    if (admin==true){
+	    	name=name+"(admin)";
+            } 
 	    return name;
 	  }
 	}
