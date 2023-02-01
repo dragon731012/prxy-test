@@ -157,11 +157,8 @@ function getRandomColor() {
   var name=get_cookie("name");
   var admin=adminlist.includes(name);
   var coadmin=coadminlist.includes(name);
-  if (admin==true){
+  if (admin==true || coadmin==true){
 	  return '#0000FF';
-  }
-  else if (coadmin==true){
-	  return '#301934';
   }
   else{
       return '#808080';
