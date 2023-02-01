@@ -151,10 +151,6 @@ function getRandomName() {
 	    return name;
 	  }
 	}
-	else{
-		alert("please write one of the numbers.");
-		window.location.reload(1);
-	}
 }
 
 function getRandomColor() {
