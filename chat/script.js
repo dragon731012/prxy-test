@@ -164,7 +164,7 @@ function sendMessage() {
 			hash=hash+'#';
 			z=z+1;
 		}
-		value.replace(swearlist[x], hash);
+		value.replace(value, hash);
 		hash='';
 		x=xmax;
 	}
