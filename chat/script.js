@@ -161,9 +161,11 @@ function getRandomColor() {
 	  return '#0000FF';
   }
   else if (coadmin==true){
-	  return '#702963';
+	  return '#301934';
   }
-  return '#808080';
+  else{
+      return '#808080';
+  }
 }
 
 //------------- DOM STUFF
