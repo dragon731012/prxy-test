@@ -137,18 +137,34 @@ const DOM = {
 DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
+  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","hi"];
   const value = DOM.input.value;
-  if (value == 'hi'){
-  	alert("hi");
+  const hasWord = (str, word) => 
+  	str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(/\s+/).includes(word);
+  
+  var x=0;
+  var xmax=7;
+  var swearing=false;
+  while (x<xmax){
+  	var swear=hasWord(value,swearlist[x];
+	if (swear==true){
+		alert("no swearing or bad words!");
+		x=xmax;
+		swearing=true;
+	}
+	x=x+1;
   }
-  if (value === '') {
-    return;
+
+  if (swear != true){
+	  if (value === '') {
+	    return;
+	  }
+	  DOM.input.value = '';
+	  drone.publish({
+	    room: 'observable-room',
+	    message: value,
+	  });
   }
-  DOM.input.value = '';
-  drone.publish({
-    room: 'observable-room',
-    message: value,
-  });
 }
 
 function createMemberElement(member) {
