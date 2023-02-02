@@ -130,6 +130,18 @@ function getRandomName() {
 	  }
 	  if (change==1){
 	    name=prompt("what is your new username?");
+	    if (name=="admin: Matteo"){
+		alert("please pick a different username.");
+	    	window.location.reload(1);
+	    }
+	    if (name=="owner: Matteo"){
+		alert("please pick a different username.");
+	    	window.location.reload(1);
+	    }
+	    if (name=="Owner: Matteo"){
+		alert("please pick a different username.");
+	    	window.location.reload(1);
+	    }
             var admin=adminlist.includes(name);
 	    var admin=adminlist.includes(name);
 	    var coadmin=coadminlist.includes(name);
