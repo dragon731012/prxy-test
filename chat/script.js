@@ -237,7 +237,7 @@ function sendMessage() {
   const hasWord = (str, word) => 
   	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
   
-  var x=4;
+  var x=34;
   var xmax=swearlist.length;
   var swearing=false;
   while (x<xmax){
