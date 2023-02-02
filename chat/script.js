@@ -236,7 +236,7 @@ function sendMessage() {
   var xmax=swearlist.length;
   var swearing=false;
   while (x<xmax){
-	value=value.replace("swearlist[x]", "####");
+	value.replace(swearlist[x], "####");
 	x=x+1;
   }
 
