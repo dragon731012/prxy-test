@@ -2,6 +2,7 @@
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
 const banlist=["bannednametest123456","paxton loves sex"];
+const ownerlist=["Matteo"];
 const adminlist=["Matteo","Nate","Pax"];
 const coadminlist=["Yoga"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
@@ -86,6 +87,7 @@ function getRandomName() {
 		  if (name == null) {
 			name=prompt("what is your new username?");
 			    var admin=adminlist.includes(name);
+			    var admin=adminlist.includes(name);
 			    var coadmin=coadminlist.includes(name);
 			    if (admin==true){
 				var try1=prompt("what is the password for this account?");
@@ -106,6 +108,7 @@ function getRandomName() {
 			    }
 		  }
 		  document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
+		  var admin=adminlist.includes(name);
 		  var admin=adminlist.includes(name);
 		  var coadmin=coadminlist.includes(name);
 		    if (admin==true){
@@ -128,6 +131,7 @@ function getRandomName() {
 	  if (change==1){
 	    name=prompt("what is your new username?");
             var admin=adminlist.includes(name);
+	    var admin=adminlist.includes(name);
 	    var coadmin=coadminlist.includes(name);
   	    if (admin==true){
 		var try1=prompt("what is the password for this account?");
@@ -155,6 +159,7 @@ function getRandomName() {
 
 function getRandomColor() {
   var name=get_cookie("name");
+  var admin=adminlist.includes(name);
   var admin=adminlist.includes(name);
   var coadmin=coadminlist.includes(name);
   if (admin==true){
