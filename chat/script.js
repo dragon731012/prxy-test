@@ -227,7 +227,7 @@ const DOM = {
 DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
-  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub","dickhead","dick","shit","suck","retarded","https//:pornhub.com","https//:pornhub.com/","deez","nuef","nerf","daddy","mommy","https://pornhub.com","https://pornhub.com/","fuck u","meth","cocaine","nigger","niger","damn","damnit","🍑🥵🍆","f u c k u","fuc k u","b i t c h","🥵🍆🍑","FUCKING","fucking"];
+  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub","dickhead","dick","shit","suck","retarded","https//:pornhub.com","https//:pornhub.com/","deez","nuef","nerf","daddy","mommy","https://pornhub.com","https://pornhub.com/","fuck u","meth","cocaine","nigger","niger","damn","damnit","🍑🥵🍆","f u c k u","fuc k u","b i t c h","🥵🍆🍑","FUCKING","fucking","hi"];
   const value = DOM.input.value;
   var value1=value;
   const hasWord = (str, word) => 
@@ -239,7 +239,10 @@ function sendMessage() {
   while (x<xmax){
 	sweartest=value1.toLowerCase();
 	value1=sweartest.replace(swearlist[x], "####");
-	var sweartest2=value1.indexOf(swearlist[x]);
+	var sweartest2=value1.replace(" ","");
+	if (sweartest2.includes(swearlist[x])){
+		value1="################";
+	}
 	x=x+1;
   }
   const value2=value1;
