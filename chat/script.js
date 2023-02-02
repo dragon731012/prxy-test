@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
-const banlist=["bannednametest123456","paxton loves sex"];
+const banlist=["bannednametest123456","paxton loves sex","Yoga"];
 const adminlist=["Matteo","Nate","Pax"];
 const coadminlist=["Yoga"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
