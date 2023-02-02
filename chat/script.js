@@ -105,7 +105,7 @@ function getRandomName() {
 			    }
 			    else if (owner==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43ewfewgfwgegwegrgfsrgsrgt34hf944wt34t34";
 				if (try1==pass){
 					name="owner: "+name;
 				} 
@@ -131,7 +131,7 @@ function getRandomName() {
 			    }
 		    	    else if (owner==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43ewfewgfwgegwegrgfsrgsrgt34hf944wt34t34";
 				if (try1==pass){
 					name="owner: "+name;
 				} 
@@ -186,7 +186,7 @@ function getRandomName() {
 			    }
 	    else if (owner==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43ewfewgfwgegwegrgfsrgsrgt34hf944wt34t34";
 				if (try1==pass){
 					name="owner: "+name;
 				} 
