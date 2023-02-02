@@ -236,7 +236,8 @@ function sendMessage() {
   var x=0;
   var xmax=swearlist.length;
   while (x<xmax){
-	value1=value1.replace(swearlist[x], "####");
+	sweartest=value1.toLowerCase()
+	value1=sweartest.replace(swearlist[x], "####");
 	x=x+1;
   }
   const value2=value1;
