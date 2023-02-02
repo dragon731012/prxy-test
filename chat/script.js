@@ -236,7 +236,7 @@ function sendMessage() {
   var x=0;
   var xmax=swearlist.length;
   while (x<xmax){
-	value1=value1.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).replace(swearlist[x], "####");
+	value1=value1.replace(swearlist[x], "####");
 	x=x+1;
   }
   const value2=value1;
