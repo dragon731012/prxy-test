@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
-const banlist=["bannednametest123456","paxton loves sex"];
+const banlist=["bannednametest123456","paxton loves sex","bob"];
 const ownerlist=["Matteo"];
 const adminlist=["co-owner: Nate","Pax"];
 const coadminlist=["Yoga"];
@@ -228,7 +228,7 @@ DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
   const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub","dickhead","dick","shit","suck","retarded","https//:pornhub.com","https//:pornhub.com/","deez","nuef","nerf","daddy","mommy","https://pornhub.com","https://pornhub.com/","fuck u","meth","cocaine","nigger","niger","damn","damnit","🍑🥵🍆"];
-  const value = DOM.input.value;
+  var value = DOM.input.value;
   const hasWord = (str, word) => 
   	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
   
@@ -236,7 +236,7 @@ function sendMessage() {
   var xmax=swearlist.length;
   var swearing=false;
   while (x<xmax){
-	value.replace(swearlist[x], "####");
+	value=value.replace(swearlist[x], "####");
 	x=x+1;
   }
 
