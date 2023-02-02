@@ -143,8 +143,14 @@ function getRandomName() {
 	    	window.location.reload(1);
 	    }
 	    const hasWord = (str, word) => 
-  	    	str.replace(/[ .,  \   /#!    $%     \^&\qwertyuiopasdfghjklzxcvbnm*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
+  	    	str.replace(/[ .,  \   /#!    $%     \^&\qwertyuiopasdfghjklzxcvbnm*@{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
 	    
+	    var name2=hasWord(name,":");
+	    if (name2==true){
+	    	alert("please try not to include : or ; in your name.");
+		    window.location.reload(1);
+	    }
+		  
             var admin=adminlist.includes(name);
 	    var admin=adminlist.includes(name);
 	    var coadmin=coadminlist.includes(name);
@@ -156,6 +162,7 @@ function getRandomName() {
 	    		name="admin: "+name;
 		} 
 	    }
+	  
 	    else if (coadmin==true){
 				var try1=prompt("what is the password for this account?");
 				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
