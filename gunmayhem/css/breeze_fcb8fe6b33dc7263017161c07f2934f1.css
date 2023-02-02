@@ -1,0 +1,13 @@
+
+i.fa{
+	font-family:"FontAwesome";
+	font-weight:400;
+}
+.fa.fa-thermometer:before{content:"\f2c7"}
+.fa.fa-window-close:before{content:"\f2d3"}
+.fa.fa-reply:before{content:"\f112"}
+.fa.fa-window-close:before{content:"\f2d3"}
+.fa.fa-bitcoin:before{content:"\f15a"}
+.fa.fa-facebook-f:before{content:"\f09a"}
+.fa.fa-vimeo:before{content: "\f27d"}
+.fa.fa-youtube-square:before{content:"\f166"}
