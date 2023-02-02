@@ -142,6 +142,9 @@ function getRandomName() {
 		alert("please pick a different username.");
 	    	window.location.reload(1);
 	    }
+	    const hasWord = (str, word) => 
+  	    	str.replace(/[ .,  \   /#!    $%     \^&\qwertyuiopasdfghjklzxcvbnm*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
+	    
             var admin=adminlist.includes(name);
 	    var admin=adminlist.includes(name);
 	    var coadmin=coadminlist.includes(name);
