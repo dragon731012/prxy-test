@@ -236,18 +236,10 @@ function sendMessage() {
   var xmax=swearlist.length;
   var swearing=false;
   while (x<xmax){
-  	var swear=hasWord(value,swearlist[x]);
-	if (swear==true){
-		alert("no swearing or bad words!");
-		x=xmax;
-		swearing=true;
-	}
-	else{
-		x=x+1;
-	}
+	value=value.replace("swearlist[x]", "####");
+	x=x+1;
   }
 
-  if (swearing != true){
 	  if (value === '') {
 	    return;
 	  }
@@ -256,7 +248,7 @@ function sendMessage() {
 	    room: 'observable-room',
 	    message: value,
 	  });
-  }
+  
 }
 
 function createMemberElement(member) {
