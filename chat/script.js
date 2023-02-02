@@ -233,10 +233,13 @@ function sendMessage() {
   const hasWord = (str, word) => 
   	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
   
+  function wordfind(str,word){str.split(/[\s,\?\,\.!]+/).includes(word).replace("####")}
+	
   var x=0;
   var xmax=swearlist.length;
   while (x<xmax){
 	sweartest=value1.toLowerCase()
+	wordfind(sweartest,swearlist[x]);
 	value1=sweartest.replace(swearlist[x], "####");
 	x=x+1;
   }
