@@ -237,13 +237,14 @@ function sendMessage() {
   const hasWord = (str, word) => 
   	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
   
-  var x=4;
+  var x=0;
   var xmax=swearlist.length;
   var swearing=false;
   while (x<xmax){
   	var swear=hasWord(value,swearlist[x]);
 	if (swear==true){
 		alert("no swearing or bad words!");
+		x=xmax;
 		swearing=true;
 	}
 	else{
