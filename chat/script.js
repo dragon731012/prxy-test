@@ -239,7 +239,8 @@ function sendMessage() {
   while (x<xmax){
 	sweartest=value1.toLowerCase();
 	value1=sweartest.replace(swearlist[x], "####");
-	value1.indexOf(swearlist[x]);
+	var sweartest2=value1.indexOf(swearlist[x]);
+        alert(sweartest2);
 	x=x+1;
   }
   const value2=value1;
