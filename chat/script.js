@@ -3,7 +3,7 @@
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
 const banlist=["bannednametest123456","paxton loves sex","bob","nill kiggers"];
 const ownerlist=["Matteo"];
-const adminlist=["co-owner: Nate","Pax"];
+const adminlist=["Nate","Pax"];
 const coadminlist=["Yoga"];
 function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); }
 const drone = new ScaleDrone(CLIENT_ID, {
