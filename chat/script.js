@@ -123,18 +123,13 @@ function getRandomName() {
 			name="admin: "+name;
 		    } 
 		    else if (coadmin==true){
-				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
-				if (try1==pass){
-					name="co-admin: "+name;
-				} 
+				document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
+				name="co-admin: "+name;
+			
 			    }
 		    	    else if (owner==true){
-				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43ewfewgfwgegwegrgfsrgsrgt34hf944wt34t34";
-				if (try1==pass){
-					name="owner: "+name;
-				} 
+				document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
+			        name="owner: "+name;
 			    }
 		    else{
 			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
@@ -232,7 +227,7 @@ const DOM = {
 DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
-  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub","dickhead","dick","shit","suck","retarded","https//:pornhub.com","https//:pornhub.com/","deez","nuef","nerf","daddy","mommy","https://pornhub.com","https://pornhub.com/","fuck u","meth","cocaine","nigger","niger","s h i t"];
+  const swearlist=["sex","fuck","bitch","balls","cock","penis","porn","ass","dumbass","retard","cubs","pussy","segs","puusy","cub","dickhead","dick","shit","suck","retarded","https//:pornhub.com","https//:pornhub.com/","deez","nuef","nerf","daddy","mommy","https://pornhub.com","https://pornhub.com/","fuck u","meth","cocaine","nigger","niger","damn","damnit"];
   const value = DOM.input.value;
   const hasWord = (str, word) => 
   	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
