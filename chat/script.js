@@ -63,6 +63,8 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
+    alert("your name will be random guy if you don't change it. Will go on until Saturday.");
+    document.cookie="name=random_guy; expires=Thu, 18 Dec 9013 12:00:00 UTC";
     var name=get_cookie("name");
     var banned=banlist.includes(name);
     if (banned==true){
@@ -83,7 +85,7 @@ function getRandomName() {
 	  var change=prompt("do you want to change your username? 0=no 1=yes");
 	  if (change==0){
 		  var name=get_cookie("name");
-		  document.cookie="name=random_guy; expires=Thu, 18 Dec 9013 12:00:00 UTC";
+		 
 		  if (name == null) {
 			name=prompt("what is your new username?");
 			    var owner=ownerlist.includes(name);
