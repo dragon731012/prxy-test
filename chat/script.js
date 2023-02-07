@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
-const banlist=["bannednametest123456","paxton loves sex"];
+const banlist=["bannednametest123456","paxton loves sex","barb"];
 const ownerlist=["Matteo"];
 const adminlist=["Nate","Pax"];
 const coadminlist=["Yoga"];
@@ -91,21 +91,21 @@ function getRandomName() {
 			    var coadmin=coadminlist.includes(name);
 			    if (admin==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="thisisagreatpassword12130183113098313108913098313113293923";
+				var pass="thisisagreatpassword121301831130y8ufgtygfvt6yfg67tyfgvb7tyfgv76tyu98313108913098313113293923";
 				if (try1==pass){
 					name="admin: "+name;
 				} 
 			    }
 			    else if (coadmin==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43t34hf944e5drtfgybhujgvyftcdre5rf6tgyhuwt34t34";
 				if (try1==pass){
 					name="co-admin: "+name;
 				} 
 			    }
 			    else if (owner==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43ewfewgfwgegwegrgfsrgsrgt34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43ewfewgfwrdftgyuhnbgvfcder5ft6gyhubgvfdrefuitgyfdrft7yugvftrde54rt67gfrde45fr6g7tbuvfycdes4w3de5t7g6y8btvfcrdeysw4ed5fr6tg7ybuvfycrdte54r8t6g7ytvfycrde5f6ugt7ugegwegrgfsrgsrgt34hf944wt34t34";
 				if (try1==pass){
 					name="owner: "+name;
 				} 
@@ -165,7 +165,7 @@ function getRandomName() {
 	    var coadmin=coadminlist.includes(name);
   	    if (admin==true){
 		var try1=prompt("what is the password for this account?");
-		var pass="thisisagreatpassword12130183113098313108913098313113293923";
+		var pass="thisisagreatpassword121301831130y8ufgtygfvt6yfg67tyfgvb7tyfgv76tyu98313108913098313113293923";
 		if (try1==pass){
 			document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 	    		name="admin: "+name;
@@ -174,14 +174,14 @@ function getRandomName() {
 	  
 	    else if (coadmin==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43t34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43t34hf944e5drtfgybhujgvyftcdre5rf6tgyhuwt34t34";
 				if (try1==pass){
 					name="co-admin: "+name;
 				} 
 			    }
 	    else if (owner==true){
 				var try1=prompt("what is the password for this account?");
-				var pass="efewiufhweoi7er34try43ewfewgfwgegwegrgfsrgsrgt34hf944wt34t34";
+				var pass="efewiufhweoi7er34try43ewfewgfwrdftgyuhnbgvfcder5ft6gyhubgvfdrefuitgyfdrft7yugvftrde54rt67gfrde45fr6g7tbuvfycdes4w3de5t7g6y8btvfcrdeysw4ed5fr6tg7ybuvfycrdte54r8t6g7ytvfycrde5f6ugt7ugegwegrgfsrgsrgt34hf944wt34t34";
 				if (try1==pass){
 					name="owner: "+name;
 				} 
