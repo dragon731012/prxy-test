@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'm3BAnyjnCGqgWZye';
-const banlist=["bannednametest123456","paxton loves sex","barb","bean"];
+const banlist=["bannednametest123456","paxton loves sex","barb","bean","p o r n_d a d d y"];
 const ownerlist=["Matteo"];
 const adminlist=["Nate","Pax"];
 const coadminlist=["Yoga"];
