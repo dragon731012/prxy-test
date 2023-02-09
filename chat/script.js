@@ -233,7 +233,7 @@ function sendMessage() {
   const value = DOM.input.value;
   var value1=value;
   const hasWord = (str, word) => 
-  	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{-}='"?><+\_`~(|)]/g,"").split(/\s+/).includes(word);
+  	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\`~(-_|)]/g,"").split(/\s+/).includes(word);
   
 	
   var x=0;
