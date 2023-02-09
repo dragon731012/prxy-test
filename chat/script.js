@@ -233,7 +233,7 @@ function sendMessage() {
   const value = DOM.input.value;
   var value1=value;
   const hasWord = (str, word) => 
-  	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\`~(-_|)]/g,"").split(/\s+/).includes(word);
+  	str.replace(/[ .,  \   /#!    $%     \^&\*@;:{}='"?><+\-_`~(|)]/g,"").split(/\s+/).includes(word);
   
 	
   var x=0;
@@ -243,7 +243,7 @@ function sendMessage() {
 	value1=sweartest.replace(swearlist[x], "####");
 	var sweartest2=value1.replace(" ","");
 	sweartest2=value1.replace(":","");
-	sweartest2 = sweartest2.replace(/[&\/  =^   \    \#     ,+      ()       $~-_%.'":*?<>{}]/g, '');
+	sweartest2 = sweartest2.replace(/[&\/  =^   \    \#     ,+      (-)       $~%.'":*?<>{}]/g, '');
 	if (sweartest2.includes(swearlist[x])){
 		value1="########";
 	}
