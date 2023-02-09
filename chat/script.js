@@ -243,7 +243,7 @@ function sendMessage() {
 	value1=sweartest.replace(swearlist[x], "####");
 	var sweartest2=value1.replace(" ","");
 	sweartest2=value1.replace(":","");
-	sweartest2 = sweartest2.replace(/[&\/  =^   \    \#     ,+      (-)       $~%.'":*?<>{}]/g, '');
+	sweartest2 = sweartest2.replace(/[&\/  =^   \    \#     ,+      (-_)       $~%.'":*?<>{}]/g, '');
 	if (sweartest2.includes(swearlist[x])){
 		value1="########";
 	}
