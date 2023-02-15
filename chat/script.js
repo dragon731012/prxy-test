@@ -127,6 +127,7 @@ function getRandomName() {
 		    else if (sox==true){
 			    document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 		            name="white sox fan: "+name;
+		    }
 		    else if (coadmin==true){
 				document.cookie="name="+name+"; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
 				name="co-admin: "+name;
