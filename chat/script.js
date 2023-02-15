@@ -206,7 +206,11 @@ function getRandomColor() {
   var owner=ownerlist.includes(name);
   var admin=adminlist.includes(name);
   var coadmin=coadminlist.includes(name);
+  var sox=get_cookie("sox");
   if (owner==true){
+	  return '#0000FF';
+  }
+  if (sox=="true"){
 	  return '#0000FF';
   }
   if (admin==true){
