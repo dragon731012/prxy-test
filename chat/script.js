@@ -259,7 +259,8 @@ function sendMessage() {
 	  }
 	  if (value2=='white sox'){
 	  	alert("you have been given a new role!");
-		document.cookie="sox=true; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
+		document.cookie="sox=true; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 
+		window.location.reload(1);
 	  }
 	  DOM.input.value = '';
 	  drone.publish({
