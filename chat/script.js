@@ -87,6 +87,7 @@ function getRandomName() {
 		  if (name == null) {
 			name=prompt("what is your new username?");
 			    var owner=ownerlist.includes(name);
+			    var sox=get_cookie("sox");
 			    var admin=adminlist.includes(name);
 			    var coadmin=coadminlist.includes(name);
 			    if (admin==true){
