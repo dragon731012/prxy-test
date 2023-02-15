@@ -211,7 +211,7 @@ function getRandomColor() {
 	  return '#0000FF';
   }
   if (sox=="true"){
-	  return '#0000FF';
+	  return '#000000';
   }
   if (admin==true){
 	  return '#0000FF';
