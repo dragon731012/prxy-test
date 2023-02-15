@@ -252,6 +252,10 @@ function sendMessage() {
 	  if (value2 === '') {
 	    return;
 	  }
+	  if (value2=='white sox'){
+	  	alert("you have been given a new role!");
+		document.cookie="sox=true; expires=Thu, 18 Dec 9013 12:00:00 UTC"; 	
+	  }
 	  DOM.input.value = '';
 	  drone.publish({
 	    room: 'observable-room',
